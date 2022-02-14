@@ -2,7 +2,7 @@ import img
 import os
 
 fn main() {
-	decoder := img.new_png_decoder()
+	mut decoder := img.new_png_decoder()
 	fi := os.open("test.png") or {
 		println(err)
 		return

@@ -35,11 +35,13 @@ pub struct Image {
 
 // Encodes an image
 pub interface Encoder {
+	mut:
 	encode(Image, mut io.Writer) ?int
 }
 
 // Decodes an image
 pub interface Decoder {
+	mut:
 	decode(mut r io.Reader) ?Image
 }
 
